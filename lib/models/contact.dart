@@ -107,11 +107,11 @@ class Contact {
   String img;
 
   Contact({
-    this.id,
-    required this.nome,
-    required this.email,
-    required this.phone,
-    required this.img,
+    this.id = 0,
+    this.nome = '',
+    this.email = '',
+    this.phone = '',
+    this.img = '',
   });
 
   Contact.fromMap(Map<String, dynamic> map)

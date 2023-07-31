@@ -47,14 +47,14 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Contatos'),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.blueAccent,
         centerTitle: true,
       ),
       backgroundColor: Colors.white,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.add),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.blueAccent,
       ),
       body: ListView.builder(
         padding: EdgeInsets.all(10.0),
@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
               image: DecorationImage(
                   image: contacts[index].img != null
                       ? FileImage(File(contacts[index].img))
-                      : AssetImage('images/image.pgn')
+                      : AssetImage('lib/images/image.pgn')
                           as ImageProvider<Object>),
             ),
           ),
